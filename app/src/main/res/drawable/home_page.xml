@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+    <ScrollView
+        android:id="@+id/home_body_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/main_tree_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:id="@+id/mainTreeImg"
+                    android:src="@drawable/centred_tree"
+                    android:scaleType="centerCrop"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:layout_below="@+id/main_tree_card"
+                android:layout_alignParentStart="true"
+                android:elevation="5dp">
+
+
+                <pl.droidsonroids.gif.GifTextView
+                    android:id="@+id/arrow2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/left" />
+
+                <pl.droidsonroids.gif.GifTextView
+                    android:id="@+id/arrow3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/right" />
+
+                <com.vrjco.v.vtextview.VTextView
+                    android:id="@+id/quote1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/arrow2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="ecovate technology\n inspire the future"
+                    android:textColor="#40c167"
+                    android:textSize="25sp"
+                    android:background="@drawable/initiative_bg"
+                    />
+                <pl.droidsonroids.gif.GifTextView
+                    android:id="@+id/arrow1"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/down"
+                    android:layout_below="@id/quote1"/>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:layout_below="@id/down_arrow"
+                app:cardCornerRadius="4dp"
+               >
+
+                <RelativeLayout
+                    android:id="@+id/main_highlight_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
+                        android:id="@+id/main_highlight_rvp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <com.vrjco.v.vtextview.VTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="tathva'17"
+        android:textColor="#019417"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:id="@+id/mainTitle"
+        android:layout_margin="20dp" />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/mainTitle"
+        android:src="@drawable/tathva_man_green"
+        />
+</RelativeLayout>

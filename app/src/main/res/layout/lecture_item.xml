@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="220dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:alpha="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/lec_img"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:alpha="0.4"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@android:color/holo_green_light" />
+
+    <com.vrjco.v.vtextview.VTextView
+        android:id="@+id/lec_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/lec_img"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="17dp"
+        android:text="Lecturer Name"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        app:fontName="caviardreams_bold.ttf"
+        android:layout_toRightOf="@id/imageView7"/>
+
+    <com.vrjco.v.vtextview.VTextView
+        android:id="@+id/lec_desc"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
+        android:textColor="#FFF"
+        app:fontName="caviardreams.ttf"
+        android:layout_below="@+id/lec_name"
+        android:layout_toRightOf="@id/imageView7"
+        android:layout_alignStart="@+id/lec_name" />
+    <com.vrjco.v.vtextview.VTextView
+        android:id="@+id/lec_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time"
+        app:fontName="caviardreams.ttf"
+        android:textColor="#FFF"
+        android:layout_alignBottom="@+id/lec_img"
+        android:layout_alignEnd="@+id/lec_name" />
+</RelativeLayout>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "809521618306",
+    "firebase_url": "https://test-6d8be.firebaseio.com",
+    "project_id": "test-6d8be",
+    "storage_bucket": "test-6d8be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809521618306:android:7c541af7c1f007e6",
+        "android_client_info": {
+          "package_name": "com.example.tathva.tathvademo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809521618306-r9gbpbvdevvktrup0h7qd2jd17t2csu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA535XWJrUMAcs1Pi1DsTa92QwPggZ8OTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809521618306:android:b274f69f204a76cc",
+        "android_client_info": {
+          "package_name": "com.tathva17.tathva.tathva17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809521618306-r9gbpbvdevvktrup0h7qd2jd17t2csu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA535XWJrUMAcs1Pi1DsTa92QwPggZ8OTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

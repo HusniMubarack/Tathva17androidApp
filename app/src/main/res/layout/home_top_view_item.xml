@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg_color">
+
+    <ImageView
+        android:id="@+id/top_view_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="bg"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/initiative_bg" />
+
+    <RelativeLayout
+        android:id="@+id/text_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/overlay_black">
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_text_color"
+            android:layout_above="@+id/top_view_item_title_text"
+            android:layout_alignLeft="@+id/top_view_item_title_text"
+            android:layout_alignRight="@+id/top_view_item_title_text"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp" />
+
+        <com.vrjco.v.vtextview.VTextView
+            android:id="@+id/top_view_item_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Title Text"
+            android:textColor="#caffd1"
+            android:textSize="35dp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_text_color"
+            android:layout_below="@+id/top_view_item_title_text"
+            android:layout_alignLeft="@+id/line_1"
+            android:layout_alignRight="@+id/line_1" />
+
+
+        <!--<com.vrjco.v.vtextview.VTextView-->
+        <!--android:id="@+id/top_view_item_content_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/top_view_item_title_text"-->
+        <!--android:layout_alignStart="@+id/top_view_item_title_text"-->
+        <!--android:layout_below="@+id/top_view_item_title_text"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:layout_marginEnd="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:ellipsize="middle"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:maxHeight="200dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="5dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="Over a span of 16 years, what arose as an elementary gathering of a few scientifically inquisitive minds who thought beyond the realms of a few obese engineering textbooks so as to bring the knowledge into practicality, has now ignited a wildfire in the aspiring technical minds of our nation. Assembling all the components for the processing of a perfect technological fest,Tathva is now much ahead of it’s age. Impressive footfall, innumerable events with an extensive scope of knowledge and subjects and enthralling workshops are just part and package of this technical extravaganza. The 2016 edition of our dear techfest is all set to sail into greater distances of amusement and perfection. Enticing students from over 800 colleges pan India, Tathva presents a myriad of events,workshops,competitions pro-nites etc. Tathva,as we’d like to call it, is an exuberance in style."-->
+        <!--android:textColor="@color/title_text_color"-->
+        <!--android:textSize="17dp" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#119652</color>
+    <color name="colorPrimaryDark">#009147</color>
+    <color name="colorAccent">#1ab739</color>
+    <color name="app_bg_color">#121212</color>
+    <color name="title_text_color">#FFF</color>
+    <color name="rv_bg_color">#212121</color>
+    <color name="rv_title_color">#303030</color>
+    <color name="highlight">#04ae5b</color>
+
+
+</resources>
